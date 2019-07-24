@@ -1,0 +1,96 @@
+@import "basic.less";
+
+.service{
+	#header{
+		position: absolute;
+		width:100%;
+	}
+	#content{
+		.header{
+			background-image:url('../img/clock/service01.jpg');
+
+			&.black{
+				.title{
+					position:absolute;
+					top:50px;
+					color:white;
+
+				}
+			}
+			
+		}	
+		.services{
+			.row{
+				> div{
+					padding: 50px;
+					&:hover{
+						background:#CBCAC9;
+						color:white;
+						border:5px solid @branding-color;
+
+					}
+				}
+			}
+		}
+
+	
+// animation:move up;
+
+#moveUp {
+        // position: absolute;
+       
+        -webkit-animation: move 5s infinite alternate;
+        animation: move 5s infinite alternate;
+    }
+    
+    @-webkit-keyframes move {
+        0% {
+            top: 200px;
+        }
+        100% {
+            top: 30px;
+        }
+    }
+    
+    @keyframes move {
+        0% {
+            top: 200px;
+        }
+        100% {
+            top: 30px;
+        }
+    }
+
+
+// animation--------------end
+
+		.feature .container img{
+			margin:0;
+			margin-top:-50px;
+		}
+
+		.feature .icon-circle-empty{
+			color:@branding-color;
+			
+		}
+		.feature-brief.black {
+			margin-bottom: 100px;
+		}
+
+		
+	}
+	.big-dot{
+		li{
+			margin-bottom: 10px;
+			float: left;
+			width: 50%;
+			line-height: 1.5;	
+			&:before{
+				font-family: "fontello";
+				content:"\f10c";
+				padding-right: 10px;
+				color:#757575;
+			}
+		}
+	}
+}
